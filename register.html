@@ -53,8 +53,8 @@
     }
 
     poolData = {
-      UserPoolId: 'eu-west-1_OFvKdFz3M', // Your user pool id here
-      ClientId: '2aotin2vuk22rhuoati7205jsq' // Your client id here
+      UserPoolId: _config.cognito.userPoolId, // Your user pool id here
+      ClientId: _config.cognito.clientId // Your client id here
     };
     var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
 

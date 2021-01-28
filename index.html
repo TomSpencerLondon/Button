@@ -21,8 +21,8 @@
       Password : 'Password1978*',
     };
     var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails(authenticationData);
-    var poolData = { UserPoolId : 'eu-west-1_OFvKdFz3M',
-      ClientId : '2aotin2vuk22rhuoati7205jsq'
+    var poolData = { UserPoolId : _config.cognito.userPoolId,
+      ClientId : _config.cognito.clientId
     };
     var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
     var userData = {
