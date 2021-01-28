@@ -11,9 +11,6 @@ jobs:
     steps:
       - checkout
 
-      - restore_cache:
-          key: dependency-cache-{{ checksum "yarn.lock" }}
-
       - run:
           name: Install dependencies
           working_directory: /
